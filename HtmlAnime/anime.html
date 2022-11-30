@@ -5,23 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styleAnime.css">
 </head>
 <body>
     <header>
         <a href="#" class="logo"><i class="fas fa-infinity"></i>Anime</a>
         <nav class="navbar">
-            <a href="#/htmlRemy/index.html">Home</a>
-            <a href="#manga.html">Manga</a>
-            <a href="#anime.html" class="active">Anime</a>
-            <a href="#videojuegos.html">Videojuegos</a>
+            <a href="index.html">Home</a>
+            <a href="#anime.html">Anime</a>
+            <a href="#action.html">Action</a>
+            <a href="#child.html">Child</a>
+            <a href="#family.html">Family</a>
         </nav>
+        
         <div class="iconos">
-            <i class="fas fa-bars" id="bars"></i>
+            <i class="fas fa-bars" id="menu-bars"></i>
             <i class="fas fa-search" id="search-icon"></i>
-            <i class="fas fa-heart" id="heart"></i>
+            <a href="#" class="fas fa-heart"></a>
         </div>
+        
     </header>
+
+<!-- Aqui tenemos la seccion de home del inicio-->
+
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(img/fairy-home.jpg) no-repeat;">
+                        <div class="content">
+                            <h3>Fairy Tail</h3>
+                            <p>Fairy Tail cuenta la historia de un joven mago llamado Natsu<br>
+                                en la búsqueda de su maestro y padre adoptivo Igneel que resulta<br> 
+                                ser un dragón. Por ello se unió a Fairy Tail, un gremio de magos<br>
+                                que es famoso por los destrozos y daños que provocan en diversas<br> 
+                                ciudades (lo cual no debería ser así).</p>
+                                <a href="#" class="btn">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box second" style="background: url(img/dgray-home.jpg) no-repeat;">
+                        <div class="content">
+                            <h3>D-Gray-Man</h3>
+                            <p>La historia se centra en el joven Allen Walker, un exorcista,<br> 
+                                durante un imaginario siglo XIX en Europa. Allen se convierte<br>
+                                en miembro de la Orden Negra, una organización religiosa<br>
+                                integrada por exorcistas de todo el mundo, la cual está<br> 
+                                vinculada al Vaticano. La misión de dicha organización es<br> 
+                                detener al Conde del Milenio, una malvada entidad demoníaca<br>
+                                que pretende limpiar el mundo destruyendo a la humanidad,<br>
+                                haciendo uso de sus armas llamadas Akuma. </p>
+                                <a href="#" class="btn">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(img/one-home.jpg) no-repeat;">
+                        <div class="content">
+                            <h3>One Piece</h3>
+                            <p>Una historia épica de piratas, donde narra la historia de<br> 
+                                "Monkey D. Luffy" quien cuado tenia 7 años, comió accidentalmente<br> 
+                                una "Akuma no mi"(Futa del diablo) la cual le dio poderes de goma.<br> 
+                                Por otra parte "Gol D. Roger" conocido como "El rey de los Piratas"<br> 
+                                quien fuera ejecutado por la Marine, habló antes de morir, acerca<br> 
+                                de su famoso tesoro "One Piece" escondido en la "Gran line".</p>
+                                <a href="#" class="btn">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(img/bleach-home.jpg) no-repeat;">
+                        <div class="content">
+                            <h3>Bleach</h3>
+                            <p>Kurosaki Ichigo es un estudiante de instituto de 15 años,<br>
+                                que tiene una peculiaridad: es capaz de ver, oír y hablar con fantasmas.<br>
+                                Pero no sabe hasta dónde puede abarcar la clasificación de espíritus,<br> 
+                                ni lo que conlleva el saberlo.</p>
+                                <a href="#" class="btn">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Link de scrip swiper-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
