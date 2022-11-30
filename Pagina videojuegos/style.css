@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: darkslateblue;
+    background-size: cover;
+}
+.wellcome{
+    width: -webkit-fill-available;
+    height: 600px;
+    position: static;
+}
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color:black;
+}
+nav{
+    float: left;
+}
+.dino{
+    width: 75px;
+}
