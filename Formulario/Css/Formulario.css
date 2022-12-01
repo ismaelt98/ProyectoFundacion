@@ -11,10 +11,14 @@ body {
 div {
     width: 600px;
     height: 300px;
-    background-color: rgb(83, 206, 255);
-    position: relative;
+    backdrop-filter: blur(0px) saturate(131%);
+    -webkit-backdrop-filter: blur(0px) saturate(131%);
+    background-color: rgba(109, 160, 195, 0.7);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
     top: 150px;
-    box-shadow: 30px -15px teal;
+    position: relative;
+    box-shadow: 30px -15px rgba(60, 88, 107, 0.7);
     margin-left: 60vh;
 }
 
@@ -28,8 +32,8 @@ button {
 }
 
 @font-face {
-    font-family: 'Old';
-    src: url('Fonts/m04.TTF');
+    font-family: 'Old'; 
+    src: url('../Fonts/m04b.TTF');
 }
 
 button{
