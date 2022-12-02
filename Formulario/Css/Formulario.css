@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Old';
+    src: url('../Fonts/m04b.TTF');
+}
+
 body {
     background-image: url("../Resource/fondo.jpg");
     background-position: center;
@@ -10,7 +15,7 @@ body {
 
 div {
     width: 600px;
-    height: 300px;
+    height: 350px;
     backdrop-filter: blur(0px) saturate(131%);
     -webkit-backdrop-filter: blur(0px) saturate(131%);
     background-color: rgba(109, 160, 195, 0.7);
@@ -20,56 +25,98 @@ div {
     position: relative;
     box-shadow: 30px -15px rgba(60, 88, 107, 0.7);
     margin-left: 60vh;
+
+}
+
+h1 {
+    animation: bounce .3s ease infinite alternate;
+    -webkit-animation: bounce .3s ease infinite alternate;
+    font-family: 'Old', cursive;
+    font-size: 5px;
+    color: rgb(44, 43, 43), ;
+    text-align: center;
+    line-height: 100px;
+    text-shadow: 0 1px 0 #CCC, 
+            0 2px 0 #CCC, 
+            0 3px 0 #CCC, 
+            0 4px 0 #CCC, 
+            0 5px 0 #CCC, 
+            0 6px 0 transparent, 
+            0 7px 0 transparent, 
+            0 8px 0 transparent, 
+            0 9px 0 transparent, 
+            0 10px 10px #CCC, 
+}
+
+/* ANIMATION */
+@keyframes bounce {
+    100% {
+        top: 10px;
+        text-shadow: 0 1px 0 black,
+            0 2px 0 #CCC,
+            0 3px 0 #CCC,
+            0 4px 0 #CCC,
+            0 5px 0 #CCC,
+            0 6px 0 #CCC,
+            0 7px 0 #CCC,
+            0 8px 0 #CCC,
+            0 9px 0 #CCC,
+            0 10px 10px black;
+    }
 }
 
 label,
 input,
 button {
-    width: auto;
+    display: flex;
+    margin: auto;
     position: relative;
     top: 100px;
     margin: auto
 }
 
-@font-face {
-    font-family: 'Old'; 
-    src: url('../Fonts/m04b.TTF');
+input {
+    left: 180px;
+    width: 200px;
 }
 
-button{
-    
-    align-items: center;
-    display: flex;
-}
 h1,
 p,
 a {
+    width: auto;
+    position: relative;
     text-align: center;
     font-family: 'Old';
     font-size: 15px;
 }
 
-input {
-    width: 200px;
-}
-
 h1 {
+    filter: url(#filter);
     position: absolute;
     top: 25px;
-    left: 300px
+    left: 260px
 }
 
 a {
     position: relative;
-    top: 108px;
+    top: 105px;
+    left: 15px;
 }
 
 img {
     position: absolute;
     top: 25px;
-    left: 240px;
+    left: 200px;
     width: 50px;
 }
+
+form {
+    position: absolute;
+    width: 550px;
+    top: -15px;
+    left: 1%
+}
+
 /*                                       Posible añadido en la pagina principal
 .move_motion {
     position: absolute !important;
