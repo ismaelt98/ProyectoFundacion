@@ -18,6 +18,15 @@
     text-transform: capitalize;
     transition: all .2s linear;
 }
+
+section{
+    padding: 2rem 9%;
+}
+
+section:nth-child(even){
+    background: var(--light-color);
+}
+
 body{
     background-color: var(--light-color);
 }
@@ -26,6 +35,61 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 5.5rem;
+}
+
+.heading{
+    text-align: center;
+    color: var(--red);
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    letter-spacing: 0;
+        padding: .25em 0 .325em;
+        margin: 0 auto;
+        text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+    /* Clip Background Image */
+
+        background: url(img/animated-text-fill.png) repeat-y;
+        -webkit-background-clip: text;
+        background-clip: text;
+
+    /* Animate Background Image */
+
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: aitf 80s linear infinite;
+
+    /* Activate hardware acceleration for smoother animations */
+
+        -webkit-transform: translate3d(0,0,0);
+        -webkit-backface-visibility: hidden;
+}
+span{
+    font: 0 4em/1 "Poppins", sans-serif;
+        letter-spacing: 0;
+        padding: .25em 0 .325em;
+        margin: 0 auto;
+        text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+    /* Clip Background Image */
+
+        background: url(img/animated-text-fill.png) repeat-y;
+        -webkit-background-clip: text;
+        background-clip: text;
+
+    /* Animate Background Image */
+
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: aitf 80s linear infinite;
+
+    /* Activate hardware acceleration for smoother animations */
+
+        -webkit-transform: translate3d(0,0,0);
+        -webkit-backface-visibility: hidden;
+  }
+
+@-webkit-keyframes aitf {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
 }
 
 header{
@@ -40,6 +104,7 @@ header{
     justify-content: space-between;
     z-index: 10000;
     box-shadow: var(--box-shadow);
+    
 }
 
 .btn{
@@ -142,27 +207,261 @@ header .iconos #menu-bars{
     text-transform: uppercase;
 }
 
-.home .box .content p{
+.home .box .content P{
     line-height: 2;
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
     padding: 1rem 0;
+    backdrop-filter: blur(0px) saturate(100%);
+    -webkit-backdrop-filter: blur(0px) saturate(100%);
+    background-color: rgba(0, 0, 0, 0.681);
+    border-radius: 12px;
+    border: 1px solid rgb(255, 5, 5);
+    /*box-shadow:
+       inset 0 -12em 8em rgb(0, 0, 0),
+             0 0  0 2px rgb(244, 151, 151),
+             0.3em 0.3em 1em rgb(130, 11, 11);*/
+}
+
+/*seccion anime*/
+
+.anime{
+    padding: 5rem;
+}
+
+.anime .box{
+    width: 302px;
+    height: 168px;
+    background-size: contain;
+}
+
+.anime .content h3{
+    font-size: 1.7rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.anime .content P{
+    font-size: 1.2rem;
+    color: #fff;
+    width: 300px;
+    text-decoration: none;
+    backdrop-filter: blur(0px) saturate(100%);
+    -webkit-backdrop-filter: blur(0px) saturate(100%);
+    background-color: rgba(81, 73, 73, 0.109);
+    border-radius: 5px;
+    border: 0.5px solid rgb(255, 116, 116);
+}
+
+ /*Seccion peliculas */
+
+.action{
+    padding: 5rem;
+}
+
+.action .box{
+    width: 302px;
+    height: 168px;
+    background-size: contain;
+}
+
+.action .content h3{
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.action .content P{
+    font-size: 1.2rem;
+    color: #fff;
+    width: 300px;
+    text-decoration: none;
+    backdrop-filter: blur(0px) saturate(100%);
+    -webkit-backdrop-filter: blur(0px) saturate(100%);
+    background-color: rgba(81, 73, 73, 0.109);
+    border-radius: 5px;
+    border: 0.5px solid rgb(255, 116, 116);
+}
+
+/*Seccion child */
+
+.child{
+    padding: 5rem;
+}
+
+.child .box{
+    width: 302px;
+    height: 168px;
+    background-size: contain;
+}
+
+.child .content h3{
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.child .content P{
+    font-size: 1.2rem;
+    color: #fff;
+    width: 300px;
+    text-decoration: none;
+    backdrop-filter: blur(0px) saturate(100%);
+    -webkit-backdrop-filter: blur(0px) saturate(100%);
+    background-color: rgba(81, 73, 73, 0.109);
+    border-radius: 5px;
+    border: 0.5px solid rgb(255, 116, 116);
+}
+
+
+/*Seccion familiar */
+
+.family{
+    padding: 5rem;
+}
+
+.family .box{
+    width: 302px;
+    height: 168px;
+    background-size: contain;
+}
+
+.family .content h3{
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.family .content P{
+    font-size: 1.2rem;
+    color: #fff;
+    width: 300px;
+    text-decoration: none;
+    backdrop-filter: blur(0px) saturate(100%);
+    -webkit-backdrop-filter: blur(0px) saturate(100%);
+    background-color: rgba(81, 73, 73, 0.109);
+    border-radius: 5px;
+    border: 0.5px solid rgb(255, 116, 116);
+}
+
+/* Copyright de jajas xD*/
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.copyright .logo{
+    color: var(--red);
+    font-size: 2.1rem;
+    font-weight: bolder;
+}
+
+.copyright p{
+    font-size: 0.9rem;
+    color: var(--red);
+    font-size: 2rem;
 }
 
 
 
+.video-container video{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
 
+.about{
+    margin-top: 2rem;
+    color: #fff;
+}
 
+.about h2{
+    display: inline-flex;
+    font-size: 2.4rem;
+    font-weight: 500;
+    border-bottom: 4px solid var(--red);
+    color: #ffffff;
+}
 
+.about p{
+    display: inline-flex;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: justify;
+    text-decoration: none;
+}
 
+.screenshots h2{
+    display: inline-flex;
+    font-size: 2.4rem;
+    font-weight: 500;
+    border-bottom: 4px solid var(--red);
+    color: #ffffff;
+    margin-top: 1.6rem;
+}
 
+.screenshots-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    gap: 10px;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
 
+.screenshots-content img{
+    width: 100%;
+    height: 219.94px;
+    object-fit: cover;
+    margin-top: 1.6rem;
+}
 
+.download{
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem;
+}
 
+.download h2{
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin: 1.6rem 0;
+    color: #fff;
+}
 
+.downlad-links{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    margin-bottom: 2rem;
+}
 
+.downlad-links a{
+    text-align: center;
+    background: var(--red);
+    padding: 12px 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 500;
+}
 
-
+.downlad-links a:hover{
+    background: var(--black);
+    color: var(--red);
+    transition: 0.3s all linear;
+}
 
 
 
