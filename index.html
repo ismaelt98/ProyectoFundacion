@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Videogames</title>
+
+    <!--Swipper CSS-->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="main.js"></script>
@@ -33,14 +36,28 @@
         </nav>
     </header>
     <section class="wellcome"></section>
-    <section>
-        <article id="bienvenida">
-            <p>
-                <h1 class="title">Welcome!</h1>
-                Bienvenidos a la sección de videojuegos. 
-            </p>
+    <article>
+        <p><h1 class="titulo">Los más destacados</h1></p>
+    </article>
+    <section class="destacados">
+        <article>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/img/acvalhalla.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/img/facry.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/img/gta5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/img/lol.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/img/valorant.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/img/watchdogs2.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
         </article>
     </section>
-    <script src="main.js"></script>
+<!--Swiper JS-->
+<script src="/js/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

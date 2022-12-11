@@ -15,10 +15,53 @@ $(document).ready(function(){
             }
         }else{
             if(flag){
-                $("#logo").css({"margin-top": "150px", "width": "250px", "height": "250px"});
+                $("#logo").css({"margin-top": "80px", "width": "150px", "height": "150px"});
                 $("header").css({"background-color": "transparent"});
                 flag = false;
             }
         }
     });
+});
+$('.element').each(function() {
+    $(this).mouseover(function() {
+        $(this).addClass('active');
+    $('.stage').children('.element').not('.active').addClass('inactive');
+    });
+    $(this).mouseleave(function() {
+        $(this).removeClass('active');
+        $('.stage').children('.element').not('.active').removeClass('inactive');
+    });
+});
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+        640:{
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 0,
+        },
+    },
 });
