@@ -65,3 +65,17 @@ var swiper = new Swiper(".mySwiper", {
         },
     },
 });
+
+const novedades = document.querySelector(".novedades"),
+    moreBtn = novedades.querySelector("#moreBtn"),
+    closeBtn = novedades.querySelector("#close");
+    
+    moreBtn.addEventListener("click", () => {
+        novedades.classList.add("show");
+    });
+
+    closeBtn.forEach(cBt => {
+        closeBtn.addEventListener("click", () =>{
+            novedades.classList.remove("show");
+        });
+    });

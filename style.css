@@ -111,3 +111,166 @@ ul li:hover>ul{
 .swiper-button-prev{
     left: 0;
 }
+.novedades{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nov{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.nov .nov-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.nov.active .nove-content{
+    display: none;
+}
+.nov-img{
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    background: blueviolet;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+.nov-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.nov .name{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: azure;
+}
+.nov .button{
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    background: blueviolet;
+    margin-top: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.nov .button:hover{
+    background: violet;
+}
+.nov .button button{
+    background: none;
+    display: inline-block;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    color: white;
+    pointer-events: none;
+}
+.nov .popup-outer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    transform: scale(1.2);
+    transition: opacity 0.2s 0s ease-in-out, 
+                transform 0.2s 0s ease-in-out;
+}
+.nov.show .popup-outer{
+    opacity: 10;
+    pointer-events: auto;
+    transform: scale(1);
+}
+.nov .popup-box{
+    position: relative;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 380px;
+    width: 100%;
+}
+.popup-box .close{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+    color: lightgray;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.popup-box .close:hover{
+    color: grey;
+}
+.popup-box .popup-text{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.popup-box .popup-text .text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.popup-box .popup-text .text .name{
+    font-size: 14px;
+    font-weight: 400;
+}
+.popup-box img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.popup-box textarea{
+    min-height: 140px;
+    width: 100%;
+    resize: none;
+    outline: none;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 10px 10px 10px 14px;
+    font-weight: 400;
+    background: whitesmoke;
+}
+.popup-box .button{
+    display: flex;
+    justify-content: flex-end;
+}
+.popup-box .button button{
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    background: #6f93f6;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+.button button.cancel{
+    background: #f082ac;
+}
+.button button.cancel:hover{
+    background: #ec5f95;
+}
