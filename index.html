@@ -8,9 +8,9 @@
 
     <!--Swipper CSS-->
     <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="main.js"></script>
 </head>
 <body>
     <header>
@@ -59,33 +59,39 @@
     <article>
         <p><h1 class="titulo">Novedades</h1></p>
     </article>
-    <section class="novedades">
-        <article class="nov">
-            <div class="nov-content">
-                <div class="nov-img">
-                    <img src="/img/finalfantasy.jpg" alt="">
-                </div>
-                <span class="name">Final Fantasy VII:<br>Crisis Core</span>
-                <div id="moreBtn" class="button">
-                    <button>Saber más</button>
-                </div>
-                <div class="popup-outer">
-                    <div class="popup-box">
-                        <div class="popup-text">
-                            <img src="/img/finalfantasy.jpg" alt="">
-                            <div class="text">
-                                <span class="name">Final Fantasy VII:<br>Crisis Core</span>
+    <div class="novedades"> <!-- * -->
+        <div class="nov"> <!-- Body -->
+            <section> <!-- Section -->
+                <article class="nov-content"> <!-- Profile -->
+                        <div class="content"> 
+                            <div class="nov-img">
+                                <img src="/img/finalfantasy.jpg" alt="">
+                            </div>
+                            <span class="name">Final Fantasy VII:<br>Crisis Core</span>
+                            <div id="moreboton" class="boton">
+                                <button>Saber más</button>
+                            </div>
+
+                            <!-- Pop up -->
+                            <div class="popup-outer">
+                                <div class="popup-box">
+                                    <div class="popup-text">
+                                        <img src="/img/finalfantasy.jpg" alt="">
+                                        <div class="text">
+                                            <span class="name">Final Fantasy VII:<br>Crisis Core</span>
+                                        </div>
+                                    </div>
+                                    <p></p>
+                                    <div class="boton">
+                                        <button id="close" class="cancel">Volver</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <textarea placeholder="Sinopsis"></textarea>
-                        <div class="button">
-                            <button id="close" class="cancel">Volver</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </section>
+                </article>
+            </section>
+        </div>
+    </div>
 <!--Swiper JS-->
 <script src="/js/swiper-bundle.min.js"></script>
 <script src="main.js"></script>

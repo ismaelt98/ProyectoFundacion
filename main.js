@@ -49,7 +49,6 @@ var swiper = new Swiper(".mySwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-
     breakpoints: {
         640:{
             slidesPerView: 2,
@@ -66,16 +65,16 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-const novedades = document.querySelector(".novedades"),
-    moreBtn = novedades.querySelector("#moreBtn"),
-    closeBtn = novedades.querySelector("#close");
+const novcontent = document.querySelector(".nov-content"),
+    moreboton = novedades.querySelector("#moreboton"),
+    closeboton = novedades.querySelector("#close");
     
-    moreBtn.addEventListener("click", () => {
-        novedades.classList.add("show");
+    moreboton.addEventListener("click", () => {
+        novcontent.classList.add("show");
     });
 
-    closeBtn.forEach(cBt => {
-        closeBtn.addEventListener("click", () =>{
+    closeboton.forEach(cBt => {
+        closeboton.addEventListener("click", () =>{
             novedades.classList.remove("show");
         });
     });

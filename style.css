@@ -106,32 +106,38 @@ ul li:hover>ul{
     color:blueviolet;
 }
 .swiper-button-next{
-    right: 0;
+    right: 0.5;
 }
 .swiper-button-prev{
-    left: 0;
+    left: 0.5;
 }
+/* * */
 .novedades{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* Body */
 .nov{
     position: relative;
+    overflow: hidden;
+}
+/* Section */
+.nov section{
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
-.nov .nov-content{
+/* Profile */
+.nov section .content{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
-.nov.active .nove-content{
+.nov section.show .content{
     display: none;
 }
 .nov-img{
@@ -149,13 +155,13 @@ ul li:hover>ul{
     border-radius: 50%;
     border: 3px solid white;
 }
-.nov .name{
+.content .name{
     text-align: center;
     font-size: 15px;
     font-weight: 500;
     color: azure;
 }
-.nov .button{
+.content .boton{
     display: flex;
     align-items: center;
     padding: 12px 20px;
@@ -165,10 +171,10 @@ ul li:hover>ul{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.nov .button:hover{
+.content .boton:hover{
     background: violet;
 }
-.nov .button button{
+.content .boton button{
     background: none;
     display: inline-block;
     outline: none;
@@ -177,7 +183,7 @@ ul li:hover>ul{
     color: white;
     pointer-events: none;
 }
-.nov .popup-outer{
+.nov-content .popup-outer{
     position: absolute;
     display: flex;
     align-items: center;
@@ -193,12 +199,12 @@ ul li:hover>ul{
     transition: opacity 0.2s 0s ease-in-out, 
                 transform 0.2s 0s ease-in-out;
 }
-.nov.show .popup-outer{
-    opacity: 10;
+.nov-content.show .popup-outer{
+    opacity: 1;
     pointer-events: auto;
     transform: scale(1);
 }
-.nov .popup-box{
+.nov-content .popup-box{
     position: relative;
     background-color: white;
     border-radius: 12px;
@@ -206,19 +212,7 @@ ul li:hover>ul{
     max-width: 380px;
     width: 100%;
 }
-.popup-box .close{
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    font-size: 24px;
-    color: lightgray;
-    transition: all 0.2s ease;
-    cursor: pointer;
-}
-.popup-box .close:hover{
-    color: grey;
-}
-.popup-box .popup-text{
+.nov-content .popup-box .popup-text{
     display: flex;
     margin-bottom: 20px;
     align-items: center;
@@ -232,32 +226,36 @@ ul li:hover>ul{
     font-size: 14px;
     font-weight: 400;
 }
-.popup-box img{
+.nov-content .popup-box img{
     height: 100px;
     width: 100px;
     object-fit: cover;
     border-radius: 50%;
 }
-.popup-box textarea{
+.nov-content .popup-box p{
     min-height: 140px;
     width: 100%;
+    margin-top: 20px;
+    padding: 12px;
     resize: none;
     outline: none;
     border: 1px solid lightgrey;
     border-radius: 6px;
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px 10px 10px 14px;
     font-weight: 400;
     background: whitesmoke;
 }
-.popup-box .button{
+.nov-content .popup-box .boton{
     display: flex;
     justify-content: flex-end;
+    margin-top: 15px;
+    margin-left: 8px;
 }
-.popup-box .button button{
+.popup-box .boton button{
     outline: none;
     border: none;
-    margin-left: 10px;
+    margin-left: 8px;
     background: #6f93f6;
     padding: 6px 12px;
     border-radius: 4px;
@@ -268,9 +266,9 @@ ul li:hover>ul{
     font-size: 14px;
     transition: all 0.3s ease;
 }
-.button button.cancel{
+.boton button.cancel{
     background: #f082ac;
 }
-.button button.cancel:hover{
+.boton button.cancel:hover{
     background: #ec5f95;
 }
