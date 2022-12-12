@@ -8,14 +8,12 @@ $(document).ready(function(){
         scroll = $(window).scrollTop();
         if(scroll>50){
             if(!flag){
-                $("#logo").css({"margin-top": "-5px", "width": "50px", "height": "50px"});
 
                 $("header").css({"background-color": "#ff1493"});
                 flag = true;
             }
         }else{
             if(flag){
-                $("#logo").css({"margin-top": "80px", "width": "150px", "height": "150px"});
                 $("header").css({"background-color": "transparent"});
                 flag = false;
             }
@@ -66,16 +64,14 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-const novedades = document.querySelector(".novedades"),
-    moreBtn = novedades.querySelector("#moreBtn"),
-    closeBtn = novedades.querySelector("#close");
-    
-    moreBtn.addEventListener("click", () => {
-        novedades.classList.add("show");
-    });
+const section = document.querySelector(".section"),
+      moreBtn = section.querySelector("#moreBtn"),
+      lessBtn = section.querySelector("#lessBtn");
 
-    closeBtn.forEach(cBt => {
-        closeBtn.addEventListener("click", () =>{
-            novedades.classList.remove("show");
-        });
-    });
+      moreBtn.addEventListener("click" , () => {
+        section.classList.add("show");
+      });
+
+      lessBtn.addEventListener("click" , () =>{
+        section.classList.remove("show");
+      });
