@@ -1,36 +1,14 @@
-$(document).ready(function(){
-    $(".wellcome").css({"height":$(window).height() + "px"})
+/* NavBar*/
+const menuBtn = document.querySelector(".menu-btn");
+const navigation = document.querySelector(".navigation");
 
-    var flag = false;
-    var scroll;
-
-    $(window).scroll(function(){
-        scroll = $(window).scrollTop();
-        if(scroll>50){
-            if(!flag){
-
-                $("header").css({"background-color": "#ff1493"});
-                flag = true;
-            }
-        }else{
-            if(flag){
-                $("header").css({"background-color": "transparent"});
-                flag = false;
-            }
-        }
-    });
-});
-$('.element').each(function() {
-    $(this).mouseover(function() {
-        $(this).addClass('active');
-    $('.stage').children('.element').not('.active').addClass('inactive');
-    });
-    $(this).mouseleave(function() {
-        $(this).removeClass('active');
-        $('.stage').children('.element').not('.active').removeClass('inactive');
-    });
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("active");
+    navigation.classList.toggle("active");
 });
 
+
+/*Swiper*/
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 25,
@@ -63,16 +41,14 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-const novedades = document.querySelector(".novedades"),
+const novedades = document.querySelector(".section"),
     moreBtn = novedades.querySelector("#moreBtn"),
-    closeBtn = novedades.querySelector("#close");
+    lessBtn = novedades.querySelector("#lessBtn");
     
     moreBtn.addEventListener("click", () => {
         novedades.classList.add("show");
     });
 
-    closeBtn.forEach(cBt => {
-        closeBtn.addEventListener("click", () =>{
+    lessBtn.addEventListener("click", () =>{
             novedades.classList.remove("show");
-        });
-    });
+});

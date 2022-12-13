@@ -8,33 +8,28 @@
 
     <!--Swipper CSS-->
     <link rel="stylesheet" href="/css/swiper-bundle.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="main.html">Inicio</a></li>
-                <li><a href="" class="menu">Categorias</a>
-                    <ul>
-                        <li><a href="">Acción</a></li>
-                        <li><a href="">Arcade</a></li>
-                        <li><a href="">Estrategia</a></li>
-                        <li><a href="">Deportivos</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#destacados" class="menu">Destacados</a>
-                </li>
-                <li>
-                    <a href="#novedades" class="menu">Novedades</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <!-- NavBar-->
+        <header>
+            <a href="#" class="brand">Videogames</a>
+            <div class="menu-btn"></div>
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="#">Home</a>
+                    <a href="index.html">Novedades</a>
+                    <a href="SaberMas.html">Destacados</a>
+                    <a href="#">Categorias</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </header>
+<!-- Fondo -->
     <section class="wellcome"></section>
+<!-- Sección Destacados-->
     <article id="destacados">
         <p><h1 class="titulo">Destacados</h1></p>
     </article>
@@ -56,45 +51,45 @@
                 </div>
         </article>
     </section>
+    <!-- Sección Novedades-->
     <article>
         <p><h1 id="novedades" class="titulo">Novedades</h1></p>
     </article>
-<!-- PopUp -->
-<section class="all">
-    <article class="body">
-        <div class="section">
-            <div class="profile">
-                <div class="profile-img">
-                    <img src="/img/finalfantasy.jpg" alt="">
-                </div>
-                <span class="name">Final Fantasy VII:<br>CRISIS CORE</span>
-                <div id="moreBtn" class="boton">
-                    <button class="more">Saber más</button>
-                </div>
-            </div>
-
-            <div class="popup-outer">
-                <div class="popup-box">
-                    <div class="profile-text">
+    <!-- PopUp -->
+    <section class="all">
+        <article class="body">
+            <div class="section">
+                <div class="profile">
+                    <div class="profile-img">
                         <img src="/img/finalfantasy.jpg" alt="">
-                        <div class="text">
-                            <span class="name">Final Fantasy VII:<br>CRISIS CORE</span>
-                        </div>
-                    </div>    
-                    <textarea class="sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officiis in similique quod eveniet. Eligendi ipsam blanditiis qui placeat, accusantium excepturi, veniam voluptatum magni eius ipsa incidunt aspernatur similique vero.
-                    Possimus saepe mollitia velit explicabo eos delectus dolores ea molestias blanditiis animi voluptates tempora fugiat odit autem odio maxime nesciunt, atque nam. Reprehenderit cum quos neque corrupti vero vitae quisquam?
-                    Natus cum perferendis incidunt aspernatur, tempore id! Modi beatae ratione quibusdam laudantium laboriosam, nihil ipsam, deleniti illo sint commodi dolorum nemo sequi quidem, labore rem reprehenderit vel molestias necessitatibus ex.
-                    Tenetur corporis temporibus explicabo possimus, sapiente voluptatibus vero nulla et itaque atque voluptate cum sunt dolore quas non unde, corrupti eligendi eum doloribus quia eveniet ab placeat iusto voluptatum! Sapiente.</textarea>
-                    <div class="boton">
-                        <button id="lessBtn" class="less">Volver</button>
+                    </div>
+                    <span class="name">Final Fantasy VII:<br>CRISIS CORE</span>
+                    <div id="moreBtn" class="boton">
+                        <button class="more">Saber más</button>
                     </div>
                 </div>
+
+                <div class="popup-outer">
+                    <div class="popup-box">
+                        <div class="profile-text">
+                            <img src="/img/finalfantasy.jpg" alt="">
+                            <div class="text">
+                                <span class="name">Final Fantasy VII:<br>CRISIS CORE</span>
+                            </div>
+                        </div>    
+                        <textarea class="sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officiis in similique quod eveniet. Eligendi ipsam blanditiis qui placeat, accusantium excepturi, veniam voluptatum magni eius ipsa incidunt aspernatur similique vero.
+                        Possimus saepe mollitia velit explicabo eos delectus dolores ea molestias blanditiis animi voluptates tempora fugiat odit autem odio maxime nesciunt, atque nam. Reprehenderit cum quos neque corrupti vero vitae quisquam?
+                        Natus cum perferendis incidunt aspernatur, tempore id! Modi beatae ratione quibusdam laudantium laboriosam, nihil ipsam, deleniti illo sint commodi dolorum nemo sequi quidem, labore rem reprehenderit vel molestias necessitatibus ex.
+                        Tenetur corporis temporibus explicabo possimus, sapiente voluptatibus vero nulla et itaque atque voluptate cum sunt dolore quas non unde, corrupti eligendi eum doloribus quia eveniet ab placeat iusto voluptatum! Sapiente.</textarea>
+                        <div class="boton">
+                            <button id="lessBtn" class="less">Volver</button>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            
-        </div>
-    </article>
-</section>
->>>>>>> 27710e050c091f2558d0a5b93dff1da4d12ba3d1
+        </article>
+    </section>
 <!--Swiper JS-->
 <script src="/js/swiper-bundle.min.js"></script>
 <script src="main.js"></script>
