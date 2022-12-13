@@ -8,14 +8,12 @@ $(document).ready(function(){
         scroll = $(window).scrollTop();
         if(scroll>50){
             if(!flag){
-                $("#logo").css({"margin-top": "-5px", "width": "50px", "height": "50px"});
 
                 $("header").css({"background-color": "#ff1493"});
                 flag = true;
             }
         }else{
             if(flag){
-                $("#logo").css({"margin-top": "80px", "width": "150px", "height": "150px"});
                 $("header").css({"background-color": "transparent"});
                 flag = false;
             }
@@ -65,16 +63,16 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-const novcontent = document.querySelector(".nov-content"),
-    moreboton = novedades.querySelector("#moreboton"),
-    closeboton = novedades.querySelector("#close");
+const novedades = document.querySelector(".novedades"),
+    moreBtn = novedades.querySelector("#moreBtn"),
+    closeBtn = novedades.querySelector("#close");
     
-    moreboton.addEventListener("click", () => {
-        novcontent.classList.add("show");
+    moreBtn.addEventListener("click", () => {
+        novedades.classList.add("show");
     });
 
-    closeboton.forEach(cBt => {
-        closeboton.addEventListener("click", () =>{
+    closeBtn.forEach(cBt => {
+        closeBtn.addEventListener("click", () =>{
             novedades.classList.remove("show");
         });
     });

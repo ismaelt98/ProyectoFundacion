@@ -111,164 +111,150 @@ ul li:hover>ul{
 .swiper-button-prev{
     left: 0.5;
 }
-/* * */
-.novedades{
+/*PopUp*/
+.all{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Body */
-.nov{
-    position: relative;
+.body{
     overflow: hidden;
 }
-/* Section */
-.nov section{
+.section{
+    position: relative;
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-/* Profile */
-.nov section .content{
+.section .profile{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
-.nov section.show .content{
-    display: none;
-}
-.nov-img{
-    height: 190px;
-    width: 190px;
+.section .profile .profile-img{
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
-    background: blueviolet;
     padding: 2px;
     margin-bottom: 10px;
 }
-.nov-img img{
+.profile .profile-img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid white;
+    border:3px solid deeppink;
 }
-.content .name{
+.profile .name{
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
     color: azure;
 }
-.content .boton{
+.profile .boton{
     display: flex;
     align-items: center;
     padding: 12px 20px;
-    background: blueviolet;
+    background-color:cornflowerblue;
     margin-top: 15px;
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.content .boton:hover{
-    background: violet;
+.profile .boton:hover{
+    background: darkorchid;
 }
-.content .boton button{
+.profile .boton button{
     background: none;
-    display: inline-block;
     outline: none;
     border: none;
-    font-size: 15px;
-    color: white;
+    font-size: 20px;
+    color: azure;
     pointer-events: none;
 }
-.nov-content .popup-outer{
+.section .popup-outer{
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
     opacity: 0;
     pointer-events: none;
-    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     transform: scale(1.2);
-    transition: opacity 0.2s 0s ease-in-out, 
-                transform 0.2s 0s ease-in-out;
+    transition: opacity 0.2s ease-in-out, 
+                transform 0.2s ease-in-out;
 }
-.nov-content.show .popup-outer{
+.section.show .popup-outer{
     opacity: 1;
     pointer-events: auto;
     transform: scale(1);
 }
-.nov-content .popup-box{
+.section .popup-box{
     position: relative;
-    background-color: white;
-    border-radius: 12px;
     padding: 30px;
-    max-width: 380px;
+    max-width: 400px;
     width: 100%;
+    background: white;
+    border-radius: 12px;
 }
-.nov-content .popup-box .popup-text{
+.section .popup-box .profile-text{
     display: flex;
-    margin-bottom: 20px;
     align-items: center;
 }
-.popup-box .popup-text .text{
-    display: flex;
-    flex-direction: column;
-    margin-left: 15px;
-}
-.popup-box .popup-text .text .name{
-    font-size: 14px;
-    font-weight: 400;
-}
-.nov-content .popup-box img{
+.section .popup-box img{
     height: 100px;
     width: 100px;
     object-fit: cover;
     border-radius: 50%;
+    border: solid 2px deeppink;
 }
-.nov-content .popup-box p{
+.profile-text .text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.profile-text .text .name{
+    font-size: 18px;
+    font-weight: 400;
+    color: indigo;
+}
+.section .popup-box .sinopsis{
     min-height: 140px;
     width: 100%;
-    margin-top: 20px;
-    padding: 12px;
-    resize: none;
     outline: none;
-    border: 1px solid lightgrey;
+    border:1px solid whitesmoke;
+    padding: 5px;
     border-radius: 6px;
+    resize: none;
     font-size: 16px;
-    padding: 10px 10px 10px 14px;
     font-weight: 400;
-    background: whitesmoke;
 }
-.nov-content .popup-box .boton{
+.section .popup-box .boton{
     display: flex;
     justify-content: flex-end;
     margin-top: 15px;
-    margin-left: 8px;
 }
 .popup-box .boton button{
     outline: none;
     border: none;
-    margin-left: 8px;
-    background: #6f93f6;
     padding: 6px 12px;
-    border-radius: 4px;
-    margin-top: 15px;
-    transition: all 0.3s ease;
+    border-radius: 6px;
+    background: cornflowerblue;
+    margin-left: 8px; 
+    color: azure;
+    font-size: 16px;
     cursor: pointer;
-    color: #fff;
-    font-size: 14px;
     transition: all 0.3s ease;
 }
-.boton button.cancel{
-    background: #f082ac;
+.boton button.less{
+    background: cornflowerblue;
 }
-.boton button.cancel:hover{
-    background: #ec5f95;
+.boton button.less:hover{
+    background: darkorchid;
 }

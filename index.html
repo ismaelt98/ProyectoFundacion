@@ -25,20 +25,20 @@
                         <li><a href="">Deportivos</a></li>
                     </ul>
                 </li>
-                <img id="logo" src="logo.png">
                 <li>
-                    <a href="" class="menu">Recomendados</a>
+                    <a href="#destacados" class="menu">Destacados</a>
                 </li>
                 <li>
-                    <a href="" class="menu">Novedades</a>
+                    <a href="#novedades" class="menu">Novedades</a>
                 </li>
             </ul>
         </nav>
     </header>
     <section class="wellcome"></section>
-    <article>
+    <article id="destacados">
         <p><h1 class="titulo">Destacados</h1></p>
     </article>
+    <!-- Swiper -->
     <section class="destacados">
         <article>
             <div class="swiper mySwiper">
@@ -57,41 +57,44 @@
         </article>
     </section>
     <article>
-        <p><h1 class="titulo">Novedades</h1></p>
+        <p><h1 id="novedades" class="titulo">Novedades</h1></p>
     </article>
-    <div class="novedades"> <!-- * -->
-        <div class="nov"> <!-- Body -->
-            <section> <!-- Section -->
-                <article class="nov-content"> <!-- Profile -->
-                        <div class="content"> 
-                            <div class="nov-img">
-                                <img src="/img/finalfantasy.jpg" alt="">
-                            </div>
-                            <span class="name">Final Fantasy VII:<br>Crisis Core</span>
-                            <div id="moreboton" class="boton">
-                                <button>Saber más</button>
-                            </div>
+<!-- PopUp -->
+<section class="all">
+    <article class="body">
+        <div class="section">
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="/img/finalfantasy.jpg" alt="">
+                </div>
+                <span class="name">Final Fantasy VII:<br>CRISIS CORE</span>
+                <div id="moreBtn" class="boton">
+                    <button class="more">Saber más</button>
+                </div>
+            </div>
 
-                            <!-- Pop up -->
-                            <div class="popup-outer">
-                                <div class="popup-box">
-                                    <div class="popup-text">
-                                        <img src="/img/finalfantasy.jpg" alt="">
-                                        <div class="text">
-                                            <span class="name">Final Fantasy VII:<br>Crisis Core</span>
-                                        </div>
-                                    </div>
-                                    <p></p>
-                                    <div class="boton">
-                                        <button id="close" class="cancel">Volver</button>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="popup-outer">
+                <div class="popup-box">
+                    <div class="profile-text">
+                        <img src="/img/finalfantasy.jpg" alt="">
+                        <div class="text">
+                            <span class="name">Final Fantasy VII:<br>CRISIS CORE</span>
                         </div>
-                </article>
-            </section>
+                    </div>    
+                    <textarea class="sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officiis in similique quod eveniet. Eligendi ipsam blanditiis qui placeat, accusantium excepturi, veniam voluptatum magni eius ipsa incidunt aspernatur similique vero.
+                    Possimus saepe mollitia velit explicabo eos delectus dolores ea molestias blanditiis animi voluptates tempora fugiat odit autem odio maxime nesciunt, atque nam. Reprehenderit cum quos neque corrupti vero vitae quisquam?
+                    Natus cum perferendis incidunt aspernatur, tempore id! Modi beatae ratione quibusdam laudantium laboriosam, nihil ipsam, deleniti illo sint commodi dolorum nemo sequi quidem, labore rem reprehenderit vel molestias necessitatibus ex.
+                    Tenetur corporis temporibus explicabo possimus, sapiente voluptatibus vero nulla et itaque atque voluptate cum sunt dolore quas non unde, corrupti eligendi eum doloribus quia eveniet ab placeat iusto voluptatum! Sapiente.</textarea>
+                    <div class="boton">
+                        <button id="lessBtn" class="less">Volver</button>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-    </div>
+    </article>
+</section>
+>>>>>>> 27710e050c091f2558d0a5b93dff1da4d12ba3d1
 <!--Swiper JS-->
 <script src="/js/swiper-bundle.min.js"></script>
 <script src="main.js"></script>
