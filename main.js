@@ -40,15 +40,50 @@ var swiper = new Swiper(".mySwiper", {
         },
     },
 });
-
+// Popup 1//
 const novedades = document.querySelector(".section"),
-    moreBtn = novedades.querySelector("#moreBtn"),
-    lessBtn = novedades.querySelector("#lessBtn");
+    moreBtn1 = novedades.querySelector("#moreBtn1"),
+    lessBtn1 = novedades.querySelector("#lessBtn1");
     
-    moreBtn.addEventListener("click", () => {
+    moreBtn1.addEventListener("click", () => {
         novedades.classList.add("show");
     });
 
-    lessBtn.addEventListener("click", () =>{
+    lessBtn1.addEventListener("click", () =>{
             novedades.classList.remove("show");
 });
+
+//Popup 2//
+    moreBtn2 = novedades.querySelector("#moreBtn2"),
+    lessBtn2 = novedades.querySelector("#lessBtn2");
+    
+    moreBtn2.addEventListener("click", () => {
+        novedades.classList.add("show");
+    });
+
+    lessBtn2.addEventListener("click", () =>{
+            novedades.classList.remove("show");
+});
+//Popup 3//
+moreBtn3 = novedades.querySelector("#moreBtn3"),
+lessBtn3 = novedades.querySelector("#lessBtn3");
+
+moreBtn3.addEventListener("click", () => {
+    novedades.classList.add("show");
+});
+
+lessBtn3.addEventListener("click", () =>{
+        novedades.classList.remove("show");
+});
+//Popup 4//
+moreBtn4 = novedades.querySelector("#moreBtn4"),
+lessBtn4 = novedades.querySelector("#lessBtn4");
+
+moreBtn4.addEventListener("click", () => {
+    novedades.classList.add("show");
+});
+
+lessBtn4.addEventListener("click", () =>{
+        novedades.classList.remove("show");
+});
+
