@@ -82,7 +82,7 @@ header .navigation .navigation-items a:hover:before{
 /* Destacados */
 .titulo{
     color: white;
-    padding: 20px 10px;
+    padding: 10px 10px;
     margin: 0;
 }
 .destacados{
@@ -129,169 +129,66 @@ header .navigation .navigation-items a:hover:before{
     background-color: #ff0000;
 }
 .descripcion{
-    float: left;
+    position: relative;
 }
-.PUGB{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+.desctodos{
+    justify-content: center;
+    align-items: center;
+
 }
-.PUGB .desc{
+.desc{
+    display: inline-block;
+    justify-content: center;
     color: white;
     text-align: justify;
+    width: 200px;
+    height: 400px;
+    margin: 0 10px 0 10px;
 }
-/*PopUp*/
-.all{
+.desc h3{
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    color: #ff0000;
+}
+.desc p{
+    object-fit: cover;
+    font-size: 15px;
+}
+
+.container{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }
-.body{
+.card{
+    background:#222;
+    width: 400px;
+    height: 800px;
+    margin: 10px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.card-img{
+    height: 300px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+.card-img .ff img{
+    border-radius: 15px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.card-img p{
     overflow: hidden;
-}
-.section{
-    position: relative;
-    height: 400px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.section .profile{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    padding: 30px;
-}
-.section .profile .profile-img{
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    padding: 2px;
-    margin-bottom: 10px;
-}
-.profile .profile-img img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border:3px solid deeppink;
-}
-.profile .name{
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500;
-    color: azure;
-}
-.profile .boton{
-    display: flex;
-    align-items: center;
-    padding: 12px 20px;
-    background-color:cornflowerblue;
-    margin-top: 15px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.profile .boton:hover{
-    background: darkorchid;
-}
-.profile .boton button{
-    background: none;
-    outline: none;
-    border: none;
-    font-size: 20px;
-    color: azure;
-    pointer-events: none;
-}
-.section .popup-outer{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    opacity: 0;
-    pointer-events: none;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    transform: scale(1.2);
-    transition: opacity 0.2s ease-in-out, 
-                transform 0.2s ease-in-out;
-}
-.section.show .popup-outer{
-    opacity: 1;
-    pointer-events: auto;
-    transform: scale(1);
-}
-.section .popup-box{
-    position: relative;
-    padding: 30px;
-    max-width: 700px;
-    height: 400px;
-    width: 100%;
-    background: white;
-    border-radius: 12px;
-}
-.section .popup-box .profile-text{
-    display: flex;
-    align-items: center;
-}
-.section .popup-box img{
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: solid 2px deeppink;
-}
-.profile-text .text {
-    display: flex;
-    flex-direction: column;
-    margin-left: 15px;
-}
-.profile-text .text .name{
-    font-size: 18px;
-    font-weight: 400;
-    color: indigo;
-}
-.section .popup-box .sinopsis{
     text-align: justify;
-    min-height: 200px;
-    width: 100%;
-    outline: none;
-    border:1px solid whitesmoke;
-    padding: 5px;
-    border-radius: 6px;
-    resize: none;
-    font-size: 16px;
-    font-weight: 400;
+    color: #fff;
+    font-size: 15px;
 }
-.section .popup-box .boton{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 15px;
-}
-.popup-box .boton button{
-    outline: none;
-    border: none;
-    padding: 6px 12px;
-    border-radius: 6px;
-    background: cornflowerblue;
-    margin-left: 8px; 
-    color: azure;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.boton button.less{
-    background: cornflowerblue;
-}
-.boton button.less:hover{
-    background: darkorchid;
-}
+
+
 
 
 
