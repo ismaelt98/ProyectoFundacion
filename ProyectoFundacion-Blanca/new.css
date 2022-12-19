@@ -139,65 +139,45 @@ header .navigation.active .navigation-items{
     font-size: 62px;
 }
 @media(max-width:700px){
-    .h1{
+    .text-box h1{
         font-size: 30px;
     }
 }
-/* Most Popular */
-.popular{
+/*Latest Releases*/
+.new{
     width: 90%;
     margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-h1{
-    color: #fff;
-    font-size: 36px;
-    font-weight: 600
-}
-p{
-    color: #fff;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
 .row{
-    margin-top: 5%;
     display: flex;
-    justify-content: space-between;
 }
-.popular-col{
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: justify;
-}
-h3{
-    margin-top: 16px;
-    margin-bottom: 16px;
-    background: transparent;
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
+.newest h5{
     color: #fff;
 }
-.popular-col img{
+.new-col{
+    flex-basis: 48%;
+    padding: 15px 10px;
+}
+.new-col img{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
-.popular-col p{
-    padding: 0;
+.new-col h1{
+    color: #ff0000;
+    padding-top: 0;
 }
-@media(max-width:700px){
-    .row{
-        flex-direction: column;
-    }
+.new-col h4{
+    color: #fff;
+}
+.new-col p{
+    text-align: justify;
+    color: #fff;
+    padding: 15px 15px 25px;
 }
 .boton{
-    padding-top: 15px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 .hero-btn{
     display: inline-block;
@@ -215,44 +195,11 @@ h3{
     background: transparent;
     color: #fff;
 }
-/* Contact*/
-.contact{
-    margin: 100px auto;
-    width: 80%;
-    background-image:linear-gradient(rgba(4,9,30,0.7),
-    rgba(4,9,30,0.7)), url(gaming.png);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    text-align: center;
-    padding: 100px 0;
-}
-.contact h1{
-    color: #fff;
-    margin-bottom: 40px;
-    padding: 0;
-}
-.hero-btn{
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 12px 34px;
-    font-size: 15px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-}
-.hero-btn:hover{
-    border: 1px solid #ff0000;
-    background: #ff0000;
-}
-@media(max-width:700px){
-    .contact h1{
-        font-size: 24px;
+@media(max-width:1040px){
+    .row{
+        flex-direction: column;
     }
 }
-
 /* Footer */
 .footer{
     width: 100%;
