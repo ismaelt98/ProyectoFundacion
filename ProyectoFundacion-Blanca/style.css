@@ -307,15 +307,17 @@ h3{
 }
 .footer h3{
     color: #fff;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     margin-top: 20px;
     font-weight: 600;
 }
-.icons .fa{
+.footer p{
+    color: #fff;
+}
+.icons .fab{
     color: #fff;
     margin: 13px;
     cursor: pointer;
-    padding: 18px 0;
 }
 .fa-heart{
     color: #ff0000;
